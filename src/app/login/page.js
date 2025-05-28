@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function loginPage() {
@@ -12,7 +13,7 @@ function loginPage() {
           <label className="label">Password</label>
           <input type="password" className="input w-full" placeholder="Password" />
           <div>
-            <p>{`Don't`} have an account?<>signup</></p>
+            <p>{`Don't`} have an account?<Link href='/register'>signup</Link></p>
 
           </div>
           <button className="btn btn-primary mt-4">Login</button>
