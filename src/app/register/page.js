@@ -1,16 +1,18 @@
 "use client";
 import React from 'react'
+import registerUser from '../action/auth/registerUser';
+
 
 function registerPage() {
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = async(e)=>{
         e.preventDefault();
         const form = e.target
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-
-        console.log(name,email,password)
+        const role = 'trainee'
+        registerUser({name, email,password,role})
     }
   return (
    <div>
