@@ -9,9 +9,9 @@ function loginPage() {
       <div className="card-body">
         <form className="fieldset">
           <label className="label">Email</label>
-          <input type="email" className="input w-full" placeholder="Email" />
+          <input name='email' type="email" className="input w-full" placeholder="Email" />
           <label className="label">Password</label>
-          <input type="password" className="input w-full" placeholder="Password" />
+          <input name='password' type="password" className="input w-full" placeholder="Password" />
           <div>
             <p>{`Don't`} have an account?<Link href='/register'>signup</Link></p>
 
